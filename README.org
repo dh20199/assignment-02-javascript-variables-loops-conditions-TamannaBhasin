@@ -1,0 +1,38 @@
+* Javascript Loops, Conditions, and Objects Assignment: Goal
+This is an assignment for [[http://digital.hackinghistory.ca][Digital History]], a digital humanities course taught in the History Department at the University of Toronto.  If you're a teacher, feel free to fork and repurpose for your own courses.  If you're a student, keep reading!
+
+You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this assignment, you will learn /very basic/ javascript coding skills and apply them to a few simple problems. The goal of the assignment is to provide you with basic technical knowledge that you will need for later assignments.  
+
+*Note:* if you're reading this in VSCode, the [[https://orgmode.org/][org-mode]] syntax may not display properly. Sorry about that! It's likely easiest to read these instructions online instead. 
+
+* Expectations
+This assignment is graded pass/fail. You will only get credit if *all of your code runs as required.* To pass the assignment, you must:
+- successfully [[https://classroom.github.com/a/M4HMIiOP][copy this repository via github classroom]] and clone a local copy
+- complete at least the first part of this assignment (plus the second part if you hope to get an A in the class), such that both the student-visible tests and the instructor/machine-visible tests all pass.
+- commit your work to git as you go, so that a query of the git history will show multiple steps. Please note that git commits are timestamped and unique; they are an excellent defense against accusations of cheating, so please use them extensively. Tests will fail unless you make at least 6 commits to the repository.
+- push all your changes to Github
+- the last commit *pushed to the master branch* by the assignment deadline becomes your submission automatically
+
+* Checking Out And Handing In the Assignment
+
+Create your personal copy of this repository by [[https://classroom.github.com/a/M4HMIiOP][following this link]]. The new repository will appear at the URL https://github.com/DH20199/02-loops-conds-objects-YOURGITHUBID (as always, replace with your own github ID!).  Clone this new repository locally via the "Clone or Download" process discussed in [[https://github.com/DigitalHistory/assignment-00-git-and-github/][your first assignment]] and also [[https://help.github.com/articles/cloning-a-repository/][described here]], and do your work in VSCode. 
+
+When your assignment passes all tests and you are satisfied with your work, *please be sure that you have also pushed all your commits to the repository*. This will ensure that I receive your work.
+
+* Details
+
+As you know, web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  In this assignment, we finally turn to Javascript, a.k.a. "the fun part".   
+
+*Please make use of the Javascript resources which can be found [[https://digitalhistory.github.io/tools/js-resources-tools/][in the  Tools section of the website]].*  For this assignment, you will certainly want to read much of [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps][First steps]] and [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks][Building Blocks]] in MDN, and will benefit from exploring further.
+
+** Part 1 - Javascript in the Console  
+
+Let me stress this strongly: you can try to do this assignment without the resources above, but it will be *much, much harder*. 
+
+Once you have read the MDN resources and attempted the exercises there. , you should find this part of the assignment very straightforward. Complete the code in [[./Problems/01-functions-and-variables.js]]  and [[./Problems/02-objects-tests-loops.js]] according to the instruction-comments in those file.  Check your code by testing it in the [[https://developer.mozilla.org/en/docs/Tools/Scratchpad][Firefox Scratchpad]], the [[https://developers.google.com/web/tools/chrome-devtools/debug/console/][Chrome console]], ~require~-ing your code in a terminal, running ~Quokka~ on your active files, etc. (instructions for those last two methods coming soon). I have also written tests for you which will produce the appropriate output when your code is correct. 
+
+** Part 2: Reflection
+*If and only if you are aiming to achieve an A in the course*, you must also complete the Reflection section of the assignment.  Remember: no need to copy or rename a file. Simply answer the questions in ~Reflection/reflection.md~.  Follow the directions in the file. 
+
+** Tests
+As in our other assignments, this one conmes with a set of bundled tests designed to make your life a little easier. Hopefully these work a bit better than the last set (they were much simpler to write, so I think they will work just fine).  To run them, first execute ~npm install~ from this directory. Then run ~npm test~ or, to watch the directory continuously, ~npm run watch~.  You can also skip the Reflection tests with ~npm run test-main-only~, and optionally simplify the test console output with ~npm run test-less-confusing~. 
