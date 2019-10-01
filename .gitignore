@@ -1,0 +1,14 @@
+node_modules
+mochawesome-report/
+/test/jsdom-fool-bundle.js
+/test/jsdom-fool.html
+/test/jsdom-fooling.js
+/test/mocha-fooling.js
+/test/phantom-tests.js
+/test/selenium-fooling.js
+/test/word-count-fooling.js
+experiments/
+TestResults/
+node_modules_security_vuln/
+/package-lock-sec-vuln.json
+/Reflection/titaniumbones.md
