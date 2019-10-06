@@ -23,8 +23,8 @@ const matchesProfEmail = function (email, profEmails) {
   return (profEmails.indexOf(email) > -1);
 };
 
-const studentCommits = 0,
-      minCommits = 4;
+var studentCommits = 0;
+const minCommits = 4;
 const chai=require('chai'),
       expect=chai.expect,
       assert=chai.assert;
