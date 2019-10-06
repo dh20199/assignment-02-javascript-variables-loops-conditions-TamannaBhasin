@@ -56,7 +56,7 @@ function greeting(name) {
   // say goodbye, I might write
   // let parting = "Goodbye, " + name + ".";
   // (but of course, I actually want to say hello.)
-  return 'Hello,' + ' ' + name + '!';
+  return 'Hello, ' + name + '!' ; 
 }
 
 
@@ -74,11 +74,10 @@ function returnArray (first, second, third) {
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
 
-return 'first' + 'second' + 'third';
+  return ['Tim', 'Horton', 'Donuts'] ; 
 
 }
 
-let h = returnArray (first, second, third) ; 
 
 // Problem 4
 // write a function that, when passed a single argument (an array of 3 or more elements)
