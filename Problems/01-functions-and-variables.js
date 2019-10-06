@@ -7,7 +7,7 @@
 // let name = value;
 
 // you can also declare several variables at once:
-// let name1 = value1,
+// let name1 = value1, 
 //     name2 = value2,
 //     name3 = value3;
 // note the commas on the first 2 lines, and the semi-colon on the last
@@ -31,10 +31,14 @@
  * @returns {string} should be exactly "Hello!"
  */
 function hello () {
+
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
+  return 'Hello!';
 }
+// let h = hello ();
+//h
 
 // Problem 2
 // Improve your initial function by accepting a parameter
@@ -45,13 +49,16 @@ function hello () {
  * @param {string} name
  * @returns {string} a sentence that uses NAME i nits construction.
  */
+
 function greeting(name) {
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
   // let parting = "Goodbye, " + name + ".";
   // (but of course, I actually want to say hello.)
+  return 'Hello,' + ' ' + name + '!';
 }
+
 
 // Problem 3
 // write a function that takes three parameters and returns an array
@@ -66,8 +73,12 @@ function greeting(name) {
 function returnArray (first, second, third) {
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
+
+return 'first' + 'second' + 'third';
+
 }
 
+let h = returnArray (first, second, third) ; 
 
 // Problem 4
 // write a function that, when passed a single argument (an array of 3 or more elements)
