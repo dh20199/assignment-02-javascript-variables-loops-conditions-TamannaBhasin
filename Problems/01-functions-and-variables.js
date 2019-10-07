@@ -97,7 +97,11 @@ function splitArray (thisArray) {
   // array[0]
   // array[1]
   // etc.
-
+  array =  ['Tim', 'Horton', 'Donut']; 
+  let array[0] = Tim; 
+  let array[1] = Horton; 
+  let array[2] = Document; 
+  return 'array[0] ' + 'array[1] ' + 'was ' + 'a ' + 'array[2]';
 }
 
 // Problem 5
