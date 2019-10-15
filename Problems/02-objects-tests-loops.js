@@ -26,6 +26,10 @@ function returnObject (first, last, prof) {
   // o.firstName = first
   // etc.
   // don't forget to return the object
+
+  let list = {firstName : first, lastName : last, profession : prof} ;
+  return list ; 
+
 }
 
 
@@ -62,8 +66,10 @@ function objectToSentence (obj) {
   // obj.propertyname
   // note the quotes in the first options
   // also note: you need to change this next line!!
-  return 'RETURNVALUE';
-}
+
+  objectToSentence({firstName : 'Italo', lastName : 'Calvino', profession : 'novelist'})
+  
+  return firstName + ' ' + lastName + ' ' + 'was ' + 'a '+ profession ; 
 
 
 // Problem 3
