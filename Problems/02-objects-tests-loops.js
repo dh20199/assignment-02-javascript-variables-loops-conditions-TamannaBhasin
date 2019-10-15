@@ -130,8 +130,14 @@ function wasWriter (obj) {
 function stringIterator (aString, aNumber) {
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
-}
+  let y = '';
 
+  for (let i= 0; i < aNumber; i++) {
+    y = y + aString; 
+  }
+  
+  return y; 
+}
 
 // Problem 5
 // Improve upon the above function by adding the iteration number in
@@ -155,6 +161,15 @@ function stringIterator (aString, aNumber) {
  */
 function prettyIterator (aString, aNumber) {
   // be sure to check your results on this one; it has a trick. maybe 2. 
+  
+  let y = '';
+
+  for (let i= 1; i < aNumber + 1; i++) {
+    y = y + aString + '(' + i + ')' + '\n'; 
+  }
+  
+  return y; 
+
 }
 
 
@@ -203,6 +218,9 @@ function computeReign (pm) {
   // attributes and variables. remember that you may need to
   // "escape" the ' with \'
   // finally, makre sure you return the sentence as the value of the function
+
+  let f = pm.to - pm.from; 
+  return pm.fullName + '\'s ' + 'reign ' + 'was ' + f + ' ' + 'years ' + 'long.' ; 
 }
 
 
