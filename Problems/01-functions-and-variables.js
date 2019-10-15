@@ -166,7 +166,7 @@ function typeTester (unknown) {
   } else if (typeof unknown === 'number') {
     return unknown * unknown ;
   } else if (typeof unknown === 'undefined') {
-    return 'Sorry, I can\'t do anything with a a undefined value.' ; 
+    return 'Sorry, I can\'t do anything with an undefined value.' ; 
   } else {
     return 'I don\'t know how to use that kind of variable.' ; 
   }
