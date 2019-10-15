@@ -66,10 +66,9 @@ function objectToSentence (obj) {
   // obj.propertyname
   // note the quotes in the first options
   // also note: you need to change this next line!!
-
-  objectToSentence({firstName : 'Italo', lastName : 'Calvino', profession : 'novelist'})
   
-  return firstName + ' ' + lastName + ' ' + 'was ' + 'a '+ profession ; 
+  return obj.firstName + ' ' + obj.lastName + ' ' + 'was ' + 'a '+ obj.profession +'.' ; 
+}
 
 
 // Problem 3
@@ -104,6 +103,13 @@ function wasWriter (obj) {
   // "return" statement inside the conditional braces
   // so you can, e.g.,
   // if (...) {return A} else {return B}
+  if (obj.profession === 'novelist') {
+    return obj.firstName + ' ' + obj.lastName + ' ' + 'was ' + 'a '+ 'writer.' ; 
+  } else {
+    return obj.firstName + ' ' + obj.lastName + ' ' + 'was ' + 'not ' + 'a '+ 'writer.' ; 
+
+  }
+
 }
 
 
