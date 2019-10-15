@@ -73,8 +73,8 @@ function greeting(name) {
 function returnArray (first, second, third) {
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
-
-  return ['Tim', 'Horton', 'Donuts'] ; 
+  
+  return [first, second, third] ; 
 
 }
 
@@ -97,12 +97,11 @@ function splitArray (thisArray) {
   // array[0]
   // array[1]
   // etc.
-  array =  ['Tim', 'Horton', 'Donut']; 
-  let array[0] = Tim; 
-  let array[1] = Horton; 
-  let array[2] = Document; 
-  return 'array[0] ' + 'array[1] ' + 'was ' + 'a ' + 'array[2]';
+  
+  let array = thisArray[0] + ' ' + thisArray[1] + ' ' + 'was ' + 'a ' + thisArray[2] + '.'; 
+  return array;
 }
+
 
 // Problem 5
 // A. Write a simple function that takes two arguments.  Subtact the second number from the first.
@@ -115,6 +114,13 @@ function splitArray (thisArray) {
  */
 function subtract(number1, number2) {
   // subtract number2 from number1, and return the result.
+  let a = number1 ;
+  b = number2 ;
+  c = a-b ;
+  
+  return c; 
+  
+  
 }
 
 
@@ -127,7 +133,17 @@ function carefulSubtract (first, second) {
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
 
+  if (typeof first === 'number' && typeof second === 'number') {
+    let c = first-second ; 
+    return c ; 
+
+  } 
+  else {
+    return 'I can only subtract numbers.' ;
+  }
+
 }
+
 
 
 
@@ -145,6 +161,16 @@ function carefulSubtract (first, second) {
 function typeTester (unknown) {
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
+  if (typeof unknown === 'string') {
+    return unknown + ' yay!' ; 
+  } else if (typeof unknown === 'number') {
+    return unknown * unknown ;
+  } else if (typeof unknown === 'undefined') {
+    return 'Sorry, I can\'t do anything with a a undefined value.' ; 
+  } else {
+    return 'I don\'t know how to use that kind of variable.' ; 
+  }
+
 }
 
 
