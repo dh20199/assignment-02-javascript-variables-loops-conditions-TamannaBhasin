@@ -278,9 +278,9 @@ function sentences(list) {
   let listitems = list.length ; 
   let xlist = '' ; 
   let xlength = 0 ; 
-  for (let i = 0; i , listitems; i++) {
+  for (let i = 0; i < listitems; i++) {
     xlength = (list[i].to - list[i].from).toString(); 
-    xlist = xlist = list[i].fullName + '\'s ' + 'reign ' + 'was ' + xlength + ' ' + 'years ' + 'long.' + '\n' ;
+    xlist = xlist + list[i].fullName + '\'s ' + 'reign ' + 'was ' + xlength + ' ' + 'years ' + 'long.' + '\n' ;
   }
 
   return xlist ; 
