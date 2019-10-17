@@ -274,7 +274,21 @@ function sentences(list) {
   // is to use the "for...of" loop syntax to loop through the array,
   // and the object[attribute] or object.attribute reference format to access
   // the internal components of the objects.
-}
+ 
+  let listitems = list.length ; 
+  let xlist = '' ; 
+  let xlength = 0 ; 
+  for (let i = 0; i , listitems; i++) {
+    xlength = (list[i].to - list[i].from).toString(); 
+    xlist = xlist = list[i].fullName + '\'s ' + 'reign ' + 'was ' + xlength + ' ' + 'years ' + 'long.' + '\n' ;
+  }
+
+  return xlist ; 
+} 
+
+
+
+
 
 // DO NOT MODIFY -- FOR AUTOMATED TESTING ONLY
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
